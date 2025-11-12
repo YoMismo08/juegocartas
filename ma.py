@@ -8,7 +8,11 @@ class Ma:
         if carta.valor in ["J", "Q", "K"]:
             self.valor += 10
         elif carta.valor == "As":
-            self.valor += 11
+            quevols = input("Que vols? 1/11")
+            if quevols == "1":
+                self.valor += 1
+            else:
+                self.valor += 11
         else:
             self.valor += int(carta.valor)
 
